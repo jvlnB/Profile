@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi:ital@0;1&display=swap');
+    
+            body {
+                background: url('img/bg.png') no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;  
+                background-size: cover; 
+                font-family: 'Tiro Gurmukhi';
+            }
+    
+            /* Navigation Bar */
+    
+            ul { list-style-type: none;
+                margin: 0;
+                padding: 0;
+                left: 0;
+                overflow: hidden;
+                background-color: aliceblue;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+            }
+            
+            .nav-list {
+                float: right;
+                display: inline;
+            }
+            
+            .nav-list a {
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+                font-size: 18px;
+    
+                
+            }
+            
+            .nav-list a:hover:not(.active) {
+                background-color: #90b9ad;
+                transition: 2s;
+    
+            }
+            
+            .active {
+                color: white !important;
+                background-color: #90b9ad;
+            }
+            /* END OF NAVBAR */
+    
+            .container {
+                background-color: aliceblue;
+                border-radius: 10px;
+                opacity: .9;
+                padding: 20px;
+                margin: 50px;
+                margin-top: 70px !important; 
+                margin-bottom: 15px !important; 
+    
+                min-height: 80vh;
+            }
+            .profilepic {
+                margin-top: 40px;
+                /* margin-left: 100px; */
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                position: relative;
+            overflow: hidden;
+            border: 5px solid #90b9ad;
+            margin-left: 11rem;
+    
+    
+            }
+            .profilepic img{
+                width: auto; 
+                height: 100%; 
+                margin-left: -25px;
+            }
+            .content-top, .button-box{
+                /* padding: 20px !important; */
+                margin: 0px !important;
+                display: flex;
+                width: 100% !important;
+                justify-content: space-between;
+            }
+            .tek , h2{
+            text-align: center;
+            padding: 5px;
+            }
+            .mission {
+                padding: 5%;
+                margin: auto;
+            text-align: justify;
+            }
+            .indent {
+            text-indent: 30px;
+            font-size: 18px;
+    
+            }
+            .basic h1 {
+            padding-top: 10%;
+            margin-right: 11rem;
+            font-size: 45px;
+            }
+            .basic p{
+                margin-right: 11rem;
+                font-size: 22px;
+            }
+            .col-1,  .col-2,  .col-3  {
+                background-color: #4b657a;
+                width: 200px;
+                padding: 2rem;
+                margin: auto;
+                height: 150px;
+                border-radius: 19px;
+                color: aliceblue;
+            text-decoration: none;  
+            display: block;
+    
+            }
+            
+            .col-1:hover, .col-2:hover, .col-3:hover {
+                background-color: black;
+            }
+    
+            li{
+            list-style: none    ;
+        }
+    
+            @media all and (max-width: 1200px){
+                .profilepic{
+                margin-left: auto;
+                margin-right: auto;
+                width: 200px;
+                height: 200px;
+                }
+                .basic h1
+                    {
+                    padding-top: 14%;
+                    margin-left: 20px;
+                    margin-right: 50px;
+                    font-size: 35px;
+                    }
+    
+                
+                .basic p {
+                    margin-left: 20px;
+                    margin-right: 50px;
+                    font-size: 18px;
+    
+                    }
+                    .col-1,  .col-2,  .col-3  {
+                    margin: 10px;
+                    
+                    }
+            }
+    
+    
+            @media all and (max-width: 843px){
+                li a {
+                padding: 10px;
+                
+                }
+                .content-top{
+                padding: 0px; 
+                margin: 0px;
+                display: flex;
+                flex-direction: column;
+            }
+            .basic h1 {
+                padding-top: 5%;
+                text-align: center;
+                margin: 0;
+                font-size: 30px;
+            }
+                .basic p{
+                text-align: center;
+                margin: 0;
+                font-size: 16px;
+                }
+            .button-box {
+            padding: 0px; 
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            }
+            .profilepic{
+            margin-left: auto;
+            margin-right: auto;
+            }
+            .col-1,  .col-2,  .col-3  {
+            width: auto;
+            margin: 20px;
+            margin-right: auto;
+            margin-left: auto;
+    
+            }
+            .container{
+            padding: 20px;
+            margin: 20px;
+            margin-top: 50px;
+            font-size: 14px;
+            }
+            .mission {
+            padding-top: 30px;
+            font-size: 14px;
+            }
+    
+            }
+            @media all and (max-width:300px){
+            li a {
+                padding: 10px;
+                font-size: 12px;
+                
+            }
+            .profilepic {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+            .basic h1 {
+                font-size: 16px;
+            }
+                .container{
+                font-size: 12px;
+                }
+                .col-1,  .col-2,  .col-3  {
+                padding: 10px;
+                
+                }
+    
+    
+            }
+        </style>    
+    </head>
+    
+    <body>
+    <main>
+    <div class="nav">
+        <ul>
+        <li class="nav-list"><a class="navbar-link" href="spare.html"><i class="fa fa-address-card"></i> Contact</a></li>
+            <li class="nav-list"><a class="navbar-link " href="acads.html"><i class="fa fa-book"></i> Educational Background</a></li>
+            <li class="nav-list"><a class="navbar-link" href="family.html"><i class="fa fa-tasks"></i> Family Background</a></li>
+            <li class="nav-list"><a class="navbar-link" href="index.html"><i class="fa fa-home"></i> Personal Information</a></li>
+
+        </ul>
+    </div>
+</main>
+
+<script>
+const activePage = window.location.pathname;
+const select = document.querySelectorAll('div.nav > ul > li a').forEach(link => {
+    if(link.href.includes(activePage)){
+        link.classList.add('active');
+    }
+});
+</script>
+
+<div class="container">
+    <div class="mission">
+    <p class = "indent">
+    I am an active student both in academics and extra-curricular. I was a member of various organizations. On my Senior HIgh, I was the Representative for Technical Vocational Strand. 
+    I also joined culture and arts organization and became an officer during my college days.
+    </p>
+    Listed below are the schools that I attended:<br><br>
+    <li><b>Primary: </b> Makiling Elementary School/ Sta. Elena Elementar School </li>
+    <li><i>Dean's Lister 2nd Sem</i> (2nd year College)</li>
+    <li><i>Dean's Lister 1st-2nd Sem</i> (1st year College)</li>
+    <li><i>Graduated with Honors</i> (SHS)</li>
+    </div>
+  
+     </div>
+</body>
+</html>
